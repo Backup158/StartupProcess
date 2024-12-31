@@ -34,4 +34,5 @@ Custom formatting in settings: `%a, %Y-%m-%e, %H:%M` to create something like `M
 ## Celluloid
 User Scripts: [Go to next file in folder with SHIFT + RIGHT_ARROW](https://github.com/jonniek/mpv-nextfile)
 ![celluloid](https://github.com/user-attachments/assets/2596439d-d5fc-4b2b-adc2-17e64496f75b)
-
+## Media Info and mediainfo-gui
+Shows video resolution and stuff. Install through Software Manager
