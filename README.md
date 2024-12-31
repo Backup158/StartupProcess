@@ -21,10 +21,17 @@ https://github.com/Backup158/BashScripts
 
 Create `Scripts` folder in home directory (~/Scripts)
 
-# Mount Steam Library
+# Mount Partition with Steam Library
 https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows
 
 Find partition name using `sudo fdisk -l` then `sudo blkid` for the UUID
 
 Add to `/etc/fstab/`:        `/dev/nvme0n1p5 /mnt/data ntfs uid=1000,gid=1000,rw,user,exec,umask=000 0 0`. First entry is the name or UUID. ~~`vfat` is needed to be specified for FAT32~~ Don't use FAT
- 
+
+# App Settings
+## Clock
+Custom formatting in settings: `%a, %Y-%m-%e, %H:%M` to create something like `Mon, 2024-12-30, 14:21`
+## Celluloid
+User Scripts: [Go to next file in folder with SHIFT + RIGHT_ARROW](https://github.com/jonniek/mpv-nextfile)
+![celluloid](https://github.com/user-attachments/assets/2596439d-d5fc-4b2b-adc2-17e64496f75b)
+
