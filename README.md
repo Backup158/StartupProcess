@@ -21,7 +21,7 @@ Create `Scripts` folder in home directory (~/Scripts). Add snippet of code to `~
 ```
 # Adds scripts folder to executable path
 export PATH=$PATH:~/Scripts/
-# allows sudo to search work with aliases
+# Extends sudo to work with aliases
 alias sudo='sudo '
 ```
 Copy aliases into `~/.bash_aliases` from the Scripts repo.
@@ -39,6 +39,8 @@ Add to `/etc/fstab/`:        `/dev/nvme0n1p5 /mnt/data ntfs uid=1000,gid=1000,rw
 # App Settings
 ## Clock
 Custom formatting in settings: `%a, %Y-%m-%d, %H:%M` to create something like `Mon, 2024-12-30, 14:21`
+## Keyboard
+Add custom shortcut to open gnome system monitor (task manager) to mimic Windows. Use `ctrl+shift+escape` to execute command `gnome-system-monitor`
 ## Celluloid
 User Scripts: [Go to next file in folder with SHIFT + RIGHT_ARROW](https://github.com/jonniek/mpv-nextfile)
 ![celluloid](https://github.com/user-attachments/assets/2596439d-d5fc-4b2b-adc2-17e64496f75b)
