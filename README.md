@@ -1,6 +1,9 @@
 # Introduction
 Quick overview of sources and things to remind me of things to install
 
+## Glossary
+**MSM**: Mint's Software Manager
+
 # Dual Boot Partitions
 Separate partitions for OS and data so I can reimage without losing data. Well that was the plan until I made them too small to update so I had to reimage anyways.
 
@@ -27,7 +30,7 @@ alias sudo='sudo '
 Copy aliases into `~/.bash_aliases` from the Scripts repo.
 
 ## OBS Sinks
-Creates a new null sink (for OBS only audio) and combined sink (OBS only + stream to headphones). Default sink is still the headphones. Route game audio through combined sink through pavucontrol (because I like GUIs). PulseAudio Volume Control, install through Mint's Software Manager. 
+Creates a new null sink (for OBS only audio) and combined sink (OBS only + stream to headphones). Default sink is still the headphones. Route game audio through combined sink through pavucontrol (because I like GUIs). PulseAudio Volume Control, install through MSM. 
 
 # Mount Partition with Steam Library
 https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows
@@ -46,3 +49,5 @@ User Scripts: [Go to next file in folder with SHIFT + RIGHT_ARROW](https://githu
 ![celluloid](https://github.com/user-attachments/assets/2596439d-d5fc-4b2b-adc2-17e64496f75b)
 ## Media Info and mediainfo-gui
 Shows video resolution and stuff. Install through Software Manager
+## Vencord
+Install Vesktop through MSM for working stream audio. Import settings from [repo](https://github.com/Backup158/VencordTheme/tree/main). Install Flatseal through MSM and give it permissions to access the memes folder.
