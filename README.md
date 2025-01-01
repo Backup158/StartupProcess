@@ -16,10 +16,19 @@ Create GPT Drive.
 
 Boot into USB and install Windows with a custom install. Use autoattend file if applicable. With GPT drive, make sure you boot with UEFI. With Ventoy, this is a separate option in the boot options (`UEFI: Generic` instead of `Generic` since it's a flash drive).
 
-# Setup Scripts
+# Scripts
 https://github.com/Backup158/BashScripts
 
-Create `Scripts` folder in home directory (~/Scripts)
+Create `Scripts` folder in home directory (~/Scripts). Add snippet of code to `~/.bashrc` (make sure hidden files is enabled in Nemo, toggle with ctrl + h).
+```
+# Adds scripts folder to executable path
+export PATH=$PATH:~/Scripts/
+# allows sudo to search work with aliases
+alias sudo='sudo '
+```
+
+## OBS Sinks
+Creates a new null sink (for OBS only audio) and combined sink (OBS only + stream to headphones). Default sink is still the headphones. Route game audio through combined sink through pavucontrol (because I like GUIs). PulseAudio Volume Control, install through Mint's Software Manager. 
 
 # Mount Partition with Steam Library
 https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows
