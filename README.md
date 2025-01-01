@@ -51,3 +51,5 @@ User Scripts: [Go to next file in folder with SHIFT + RIGHT_ARROW](https://githu
 Shows video resolution and stuff. Install through Software Manager
 ## Vencord
 Install Vesktop through MSM for working stream audio. Import settings from [repo](https://github.com/Backup158/VencordTheme/tree/main). Install Flatseal through MSM and give it permissions to access the memes folder.
+## Firefox Extensions
+In case sync fails or I forgot to turn it on. Ublock Origin [remove playables and shorts](https://github.com/gluester/ublock-hide-yt-shorts-and-playables-and-other-garbage) and TamperMonkey [NexusMods download fix](https://github.com/randomtdev/nexusmods_downloadfix/)
