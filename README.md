@@ -37,7 +37,9 @@ https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Wi
 
 Find partition name using `sudo fdisk -l` then `sudo blkid` for the UUID
 
-Add to `/etc/fstab/`:        `/dev/nvme0n1p5 /mnt/data ntfs uid=1000,gid=1000,rw,user,exec,umask=000 0 0`. First entry is the name or UUID. ~~`vfat` is needed to be specified for FAT32~~ Don't use FAT
+Add to `/etc/fstab/`:        `/dev/nvme0n1p5 /mnt/data ntfs uid=1000,gid=1000,rw,user,exec,umask=000 0 0`. First entry is the name or UUID. ~~`vfat` is needed to be specified for FAT32~~ Don't use FAT.
+
+Booting into Windows may make this partition read only when coming back to Linux. Run `sudo ntfsfix /dev/nvme0n1p5` to fix the permissions then reboot the computer. You may need to unmount the partition first. I did both at once so couldn't isolate the true solution (because I'm lazy).
 
 # App Settings
 ## Clock
