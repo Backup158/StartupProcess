@@ -32,6 +32,8 @@ Copy aliases into `~/.bash_aliases` from the Scripts repo.
 ## OBS Sinks
 Creates a new null sink (for OBS only audio) and combined sink (OBS only + stream to headphones). Default sink is still the headphones. Route game audio through combined sink through pavucontrol (because I like GUIs). PulseAudio Volume Control, install through MSM. 
 
+Note that if OBS starts before the sinks are created, audio won't play through them. In Startup Programs, add a delay to OBS.
+
 # Mount Partition with Steam Library
 https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows
 
