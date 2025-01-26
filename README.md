@@ -65,3 +65,5 @@ Change from schedutil to performance
 Check current plan with `cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor`
 
 Change using `echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
+
+Does this actually make a difference? It was like 2% better a few years ago but now I think I'm just changing things for placebo.
