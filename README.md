@@ -59,3 +59,9 @@ Install Vesktop through MSM for working stream audio. Import settings from [repo
 In case sync fails or I forgot to turn it on. Ublock Origin [remove playables and shorts](https://github.com/gluester/ublock-hide-yt-shorts-and-playables-and-other-garbage) and TamperMonkey [NexusMods download fix](https://github.com/randomtdev/nexusmods_downloadfix/)
 ## Fonts
 Install [Faustina](https://fonts.google.com/specimen/Faustina) font for projects. Use with `installFont.sh` script.
+## CPU Scaling Governor
+Change from schedutil to performance
+
+Check current plan with `cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor`
+
+Change using `echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
