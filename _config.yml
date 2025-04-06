@@ -1,0 +1,6 @@
+title: "Desktop Setup Process"
+description: "Overview of my dual boot setup process"
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+  - jekyll-remote-theme
+markdown: GFM
