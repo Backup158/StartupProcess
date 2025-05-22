@@ -67,3 +67,17 @@ Check current plan with `cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_govern
 Change using `echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
 
 Does this actually make a difference? It was like 2% better a few years ago but now I think I'm just changing things for placebo.
+
+---
+
+# Laptop
+What I'm currently using is a Dual Boot Linux Mint/Windows 10 setup, but this was a mistake. I only have one drive, and I'm risking my Linux setup any time Windows updates. Soon (written on 2025-05-22) I won't have to worry about Windows 10 updates, but that'd also mean I wouldn't be worrying about browsing the web lol.
+
+# Grub Settings
+`sudo nano /etc/default/grub`
+
+Change `GRUB_CMDLINE_LINUX_DEFAULT`:
+
+- `nomodeset` disables GPU drivers from loading at first (and for me I guess they just never reinstalled). On older kernels, I had set it because it was getting stuck at the bootup due to a missing driver. Once I updated my kernel, I removed this. It kills performance and the lack of GPU drivers means that secondary monitors won't work.
+- `quiet` suppress debug messages during boot
+- `splash` show the Linux Mint splash screen on boot
