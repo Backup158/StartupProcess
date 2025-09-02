@@ -89,6 +89,16 @@ Testing out a pure Bazzite setup. Mint out of the box had problems with running 
 
 Screen Edges: Disable overview from top left (hovering over that would bring up the blown up desktop view)
 
+**Wallpaper**
+
+Wallpaper type: Wallpaper Engine for Kde
+
+HELL YEAH
+
+Select the `Steam` folder (not `steamapps/common`) and install Wallpaper Engine through Steam. Refresh and it'll show up. LET'S. FUCKING. GO. 
+
+Scale and Crop may have issues with centering on the right point but I DON'T CARE.
+
 ## Widgets (On Panel)
 **Digital Clock**
 
