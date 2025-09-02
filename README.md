@@ -99,6 +99,10 @@ Select the `Steam` folder (not `steamapps/common`) and install Wallpaper Engine 
 
 Scale and Crop may have issues with centering on the right point but I DON'T CARE.
 
+Randomize Timer: On
+
+Set to every 30 minutes
+
 ## Widgets (On Panel)
 **Digital Clock**
 
