@@ -47,7 +47,9 @@ Booting into Windows may make this partition read only when coming back to Linux
 ## Clock
 Custom formatting in settings: `%a, %Y-%m-%d, %H:%M` to create something like `Mon, 2024-12-30, 14:21`
 ## Keyboard
-Add custom shortcut to open gnome system monitor (task manager) to mimic Windows. Use `ctrl+shift+escape` to execute command `gnome-system-monitor`
+Add custom shortcuts to mimic Windows
+- Open gnome system monitor (task manager): `ctrl+shift+escape` to execute command `gnome-system-monitor`
+- Take screenshot of area: `shift+super+s` for `Copy a screenshot of an area to clipboard`
 ## Celluloid
 User Scripts: [Go to next file in folder with SHIFT + RIGHT_ARROW](https://github.com/jonniek/mpv-nextfile)
 ![celluloid](https://github.com/user-attachments/assets/2596439d-d5fc-4b2b-adc2-17e64496f75b)
