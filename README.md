@@ -68,6 +68,16 @@ Change using `echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/s
 
 Does this actually make a difference? It was like 2% better a few years ago but now I think I'm just changing things for placebo.
 
+## Nemo Thumbnails for .dds
+Create a custom thumbnailer `nano ~/.local/share/thumbnailers/custom.thumbnailer` (may need to make folder first)
+
+Add 
+```
+[Thumbnailer Entry]
+Exec=/usr/bin/convert -thumbnail x%s %i png:%o
+MimeType=image/x-dds;
+```
+
 ---
 
 # Laptop
@@ -91,17 +101,19 @@ Screen Edges: Disable overview from top left (hovering over that would bring up 
 
 **Wallpaper**
 
-Wallpaper type: Wallpaper Engine for Kde
+Wallpaper type: Wallpaper Engine for KDE
 
-HELL YEAH
+~~HELL YEAH~~
 
-Select the `Steam` folder (not `steamapps/common`) and install Wallpaper Engine through Steam. Refresh and it'll show up. LET'S. FUCKING. GO. 
+Select the `Steam` folder (not `steamapps/common`) and install Wallpaper Engine through Steam. Refresh and it'll show up. ~~LET'S. FUCKING. GO.~~
 
-Scale and Crop may have issues with centering on the right point but I DON'T CARE.
+Scale and Crop may have issues with centering on the right point ~~but I DON'T CARE~~.
 
 Randomize Timer: On
 
 Set to every 30 minutes
+
+However, some wallpapers can lead to a [blackscreen bug](https://github.com/ublue-os/bazzite/issues/2686). Too lazy to diagnose so I just kept it off.
 
 ## Widgets (On Panel)
 **Digital Clock**
