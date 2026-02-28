@@ -80,6 +80,15 @@ Exec=/usr/bin/convert -thumbnail x%s %i png:%o
 MimeType=image/x-dds;
 ```
 
+## Image Viewer Rename File Plugin
+Since the pull request was rejected, install the plugin yourself.
+1. Download the two files [from this repo](https://github.com/vgstef/xviewer-plugins/tree/rename-file/plugins/rename-file)
+2. Put them in `/usr/lib/xviewer/plugins`
+  - `sudo mv rename-file.py /usr/lib/xviewer/plugins`
+  - `sudo mv rename-file.plugin /usr/lib/xviewer/plugins`
+3. In Xviewer, go to Edit -> Preference -> Plugins and tick the Rename-file plugin
+4. To rename, you can press F2 or go in menu Tool -> Rename
+Yes I copied over OP's text.
 ---
 
 # Laptop
