@@ -12,12 +12,15 @@ Boot into Live USB with Linux. Install and create partitions using the tool.
 Create GPT Drive.
 
 1. EFI Boot partition; 512 MB; EFI
-2. Linux Boot; ~40 GB; EXT4          (I had it at like 15 for Mint 21 and didn't have enough space to update to 22)
-3. Linux Home; 35 GB; EXT4
+2. Linux Boot; ~~40~~ \~60 GB; EXT4   (I had it at like 15 for Mint 21 and didn't have enough space to update to 22. With 22, 40 ended up with 95% usage)
+3. Linux Home; ~~35~~ 60 GB; EXT4     (I didn't realize this where all the Flatpaks would be installed, so I'm constantly at like 1 GB free lol. This includes the proton versions from Steam)
 4. Windows Boot; 75 GB; NTFS          (Requires 64 GB)
 5. Shared Data; ---; ~~FAT~~ NTFS     (Many games and Proton will not launch when installed to a FAT partition. Mounting it with the method below still lets you read/write on Linux.)
 
 Boot into USB and install Windows with a custom install. Use autoattend file if applicable. With GPT drive, make sure you boot with UEFI. With Ventoy, this is a separate option in the boot options (`UEFI: Generic` instead of `Generic` since it's a flash drive).
+
+> [!WARNING]
+> I'll probably eventually give up on dual booting. I barely boot into Windows, so the shared data idea just causes (infrequent but present) problems on the Linux side.
 
 # [Scripts](https://github.com/Backup158/BashScripts)
 Create `Scripts` folder in home directory (~/Scripts). Add snippet of code to `~/.bashrc` (make sure hidden files is enabled in Nemo, toggle with ctrl + h).
